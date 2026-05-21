@@ -1,0 +1,31 @@
+name: OPGens
+version: 1.0.0
+main: com.opgens.plugin.OPGens
+api-version: '1.21'
+authors: [Owner]
+description: Generadores OP para servidor de Gens
+
+commands:
+  genshop:
+    description: Abre la tienda de generadores
+    usage: /genshop
+    permission: opgens.shop
+  gensdrops:
+    description: Configura el precio de venta de los drops (solo owner)
+    usage: /gensdrops
+    permission: opgens.admin
+  gensreload:
+    description: Recarga la configuracion del plugin
+    usage: /gensreload
+    permission: opgens.admin
+
+permissions:
+  opgens.shop:
+    description: Permite usar /genshop
+    default: true
+  opgens.admin:
+    description: Permite usar comandos de administrador
+    default: op
+  opgens.bypass:
+    description: Bypass de limites
+    default: op
