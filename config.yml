@@ -1,0 +1,245 @@
+# ==============================
+#        OPGens - Config
+# ==============================
+
+# Prefijo del plugin en mensajes
+prefix: "&8[&aOPGens&8]&r"
+
+# Limite de generadores por jugador (0 = sin limite)
+max-gens-per-player: 10
+
+# Intervalo en ticks entre cada drop del generador (20 ticks = 1 segundo)
+gen-tick-interval: 40
+
+# ==============================
+#     GENERADORES (en orden)
+# ==============================
+# Cada gen tiene:
+#   display-name: nombre con colores
+#   tier: numero de tier (orden de upgrade)
+#   block: bloque visual del generador
+#   drop-material: item que suelta (si es PLAYER_HEAD usa cabeza custom)
+#   drop-is-head: true si suelta cabeza
+#   head-texture: texture base64 si drop-is-head es true
+#   shop-price: precio para comprar en /genshop (solo tier 1)
+#   upgrade-price: precio para mejorar al siguiente tier
+#   sell-price: precio de venta del drop con /sell
+#   purchasable: true solo para el tier 1
+
+generators:
+  wheat_t1:
+    display-name: "&eGenerador de Trigo &7[T1]"
+    tier: 1
+    block: WHEAT
+    drop-material: WHEAT
+    drop-is-head: false
+    shop-price: 500
+    upgrade-price: 1500
+    sell-price: 5.0
+    purchasable: true
+
+  wheat_t2:
+    display-name: "&eGenerador de Trigo &6[T2]"
+    tier: 2
+    block: HAY_BLOCK
+    drop-material: WHEAT
+    drop-is-head: false
+    shop-price: 0
+    upgrade-price: 4000
+    sell-price: 5.0
+    purchasable: false
+
+  coal_t1:
+    display-name: "&8Generador de Carbon &7[T1]"
+    tier: 1
+    block: COAL_ORE
+    drop-material: COAL
+    drop-is-head: false
+    shop-price: 1000
+    upgrade-price: 3000
+    sell-price: 10.0
+    purchasable: false
+
+  coal_t2:
+    display-name: "&8Generador de Carbon &7[T2]"
+    tier: 2
+    block: COAL_BLOCK
+    drop-material: COAL
+    drop-is-head: false
+    shop-price: 0
+    upgrade-price: 8000
+    sell-price: 10.0
+    purchasable: false
+
+  iron_t1:
+    display-name: "&7Generador de Hierro &7[T1]"
+    tier: 1
+    block: IRON_ORE
+    drop-material: IRON_INGOT
+    drop-is-head: false
+    shop-price: 2500
+    upgrade-price: 7000
+    sell-price: 25.0
+    purchasable: false
+
+  iron_t2:
+    display-name: "&7Generador de Hierro &f[T2]"
+    tier: 2
+    block: IRON_BLOCK
+    drop-material: IRON_INGOT
+    drop-is-head: false
+    shop-price: 0
+    upgrade-price: 18000
+    sell-price: 25.0
+    purchasable: false
+
+  gold_t1:
+    display-name: "&6Generador de Oro &7[T1]"
+    tier: 1
+    block: GOLD_ORE
+    drop-material: GOLD_INGOT
+    drop-is-head: false
+    shop-price: 5000
+    upgrade-price: 15000
+    sell-price: 50.0
+    purchasable: false
+
+  gold_t2:
+    display-name: "&6Generador de Oro &e[T2]"
+    tier: 2
+    block: GOLD_BLOCK
+    drop-material: GOLD_INGOT
+    drop-is-head: false
+    shop-price: 0
+    upgrade-price: 40000
+    sell-price: 50.0
+    purchasable: false
+
+  redstone_t1:
+    display-name: "&cGenerador de Redstone &7[T1]"
+    tier: 1
+    block: REDSTONE_ORE
+    drop-material: REDSTONE
+    drop-is-head: false
+    shop-price: 3000
+    upgrade-price: 9000
+    sell-price: 15.0
+    purchasable: false
+
+  lapis_t1:
+    display-name: "&9Generador de Lapislazuli &7[T1]"
+    tier: 1
+    block: LAPIS_ORE
+    drop-material: LAPIS_LAZULI
+    drop-is-head: false
+    shop-price: 4000
+    upgrade-price: 12000
+    sell-price: 30.0
+    purchasable: false
+
+  diamond_t1:
+    display-name: "&bGenerador de Diamante &7[T1]"
+    tier: 1
+    block: DIAMOND_ORE
+    drop-material: DIAMOND
+    drop-is-head: false
+    shop-price: 20000
+    upgrade-price: 60000
+    sell-price: 200.0
+    purchasable: false
+
+  diamond_t2:
+    display-name: "&bGenerador de Diamante &3[T2]"
+    tier: 2
+    block: DIAMOND_BLOCK
+    drop-material: DIAMOND
+    drop-is-head: false
+    shop-price: 0
+    upgrade-price: 150000
+    sell-price: 200.0
+    purchasable: false
+
+  emerald_t1:
+    display-name: "&aGenerador de Esmeralda &7[T1]"
+    tier: 1
+    block: EMERALD_ORE
+    drop-material: EMERALD
+    drop-is-head: false
+    shop-price: 35000
+    upgrade-price: 100000
+    sell-price: 350.0
+    purchasable: false
+
+  emerald_t2:
+    display-name: "&aGenerador de Esmeralda &2[T2]"
+    tier: 2
+    block: EMERALD_BLOCK
+    drop-material: EMERALD
+    drop-is-head: false
+    shop-price: 0
+    upgrade-price: 250000
+    sell-price: 350.0
+    purchasable: false
+
+  netherite_t1:
+    display-name: "&5Generador de Netherite &7[T1]"
+    tier: 1
+    block: ANCIENT_DEBRIS
+    drop-material: NETHERITE_SCRAP
+    drop-is-head: false
+    shop-price: 80000
+    upgrade-price: 250000
+    sell-price: 800.0
+    purchasable: false
+
+  netherite_t2:
+    display-name: "&5Generador de Netherite &d[T2]"
+    tier: 2
+    block: NETHERITE_BLOCK
+    drop-material: NETHERITE_INGOT
+    drop-is-head: false
+    shop-price: 0
+    upgrade-price: 0
+    sell-price: 2000.0
+    purchasable: false
+
+  bedrock_t1:
+    display-name: "&0Generador de Bedrock &7[T1]"
+    tier: 1
+    block: BEDROCK
+    drop-material: PLAYER_HEAD
+    drop-is-head: true
+    head-texture: "eyJ0ZXh0dXJlcyI6eyJTS0lOIjp7InVybCI6Imh0dHBzOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlL2JlZHJvY2sifX19"
+    shop-price: 500000
+    upgrade-price: 0
+    sell-price: 5000.0
+    purchasable: false
+
+# ==============================
+#   CADENA DE UPGRADES
+#   (de que tier -> a que tier)
+# ==============================
+upgrade-chain:
+  wheat_t1: wheat_t2
+  coal_t1: coal_t2
+  iron_t1: iron_t2
+  gold_t1: gold_t2
+  diamond_t1: diamond_t2
+  emerald_t1: emerald_t2
+  netherite_t1: netherite_t2
+
+# ==============================
+#         MENSAJES
+# ==============================
+messages:
+  no-permission: "&cNo tienes permiso para hacer eso."
+  gen-placed: "&aGenerador colocado correctamente."
+  gen-removed: "&cGenerador removido."
+  gen-upgraded: "&aGenerador mejorado a &e{tier}&a!"
+  not-enough-money: "&cNo tienes suficiente dinero. Necesitas &e${amount}&c."
+  gen-purchased: "&aCompraste &e{gen}&a por &e${price}&a."
+  gen-max-tier: "&eEste generador ya está en el tier máximo."
+  gen-limit: "&cAlcanzaste el límite de &e{max}&c generadores."
+  drop-price-set: "&aPrecio de &e{item}&a seteado a &e${price}&a."
+  config-reloaded: "&aConfiguración recargada."
+  only-first-tier: "&cSolo puedes comprar el primer tier. &eMejora tu generador con Shift+Click derecho."
